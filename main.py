@@ -213,7 +213,7 @@ async def check_ban_command(ctx):
             f"**• {'Nickname' if lang=='en' else 'Pseudo'}:** {nickname}\n"
             f"**• {'Region' if lang=='en' else 'Région'}:** {region}"
         )
-        embed.set_image(url="https://i.ibb.co/4gj5P7DH/banned.gif")
+        embed.set_image(url="https://i.ibb.co/P7GwMDd/BANNED.png")
     else:
         embed.title = "**▌ Clean Account ✅ **" if lang == "en" else "**▌ Compte non banni ✅ **"
         embed.description = (
@@ -221,7 +221,7 @@ async def check_ban_command(ctx):
             f"**• {'Nickname' if lang=='en' else 'Pseudo'}:** {nickname}\n"
             f"**• {'Region' if lang=='en' else 'Région'}:** {region}"
         )
-        embed.set_image(url="https://i.ibb.co/SwKrD67z/notbanned.gif")
+        embed.set_image(url="https://i.ibb.co/Z1KYSWp5/NOT-BANNED.png")
 
     embed.set_footer(text="📌 Garena Free Fire")
     embed.set_thumbnail(url=ctx.author.avatar.url if ctx.author.avatar else ctx.author.default_avatar.url)
@@ -234,5 +234,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
